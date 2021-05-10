@@ -1,0 +1,133 @@
+body{
+    background: linear-gradient(80deg, #ffd86f, #fc6262);
+    color: white;
+}
+
+
+/*---------------------------------------ESTILOS GENERALES---------------------------------------------------*/
+
+.nav,
+.separador,
+.servicios,
+.productos_index,
+.bienvenida,
+.listaVendidos {
+    text-align: center;
+}
+
+.item {
+    text-transform: uppercase;
+}
+
+
+.productos_index,
+.seccion_productos,
+.listaVendidos {
+    border: solid 2px black;
+}
+
+.publicidad,
+.nav,
+.cuerpo_servicios,
+.cuerpo_tablas,
+.bienvenida {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+footer,
+.seccion_productos{
+    text-align-last: center;
+}
+
+
+/*-----------------------------------------TITULO Y NAV--------------------------------------------------*/
+
+img {
+    width: 450px;
+    height: 200px;
+}
+
+.nav,
+.separador,
+.servicios,
+.productos_index {
+    justify-content: center;
+    background-color: #2e2e2e;
+}
+
+.item {
+    margin: 0px 40px;
+    list-style: none;
+    font-size: 27px;
+    padding: 15px;
+}
+
+li:hover {
+    background: #fc6262;
+}
+
+.botones {
+    text-decoration: none;
+    color: #ffd86f;
+}
+
+
+/*---------------------------------------------BIENVENIDA---------------------------------------------------*/
+
+.bienvenida {
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagenes/bienvenida.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 90%;
+    align-content: center;
+    flex-direction: column;
+}
+
+.titulo_bienvenida {
+    font-size: 300%;
+}
+
+p {
+    font-size: 120%;
+}
+
+
+/*-----------------------------------------------SERVICIOS--------------------------------------------------*/
+
+.productos_index{
+    width: 25%;
+    height: 300px;
+    margin: 5px;
+}
+
+.productos_index,
+.seccion_productos{
+    background-color: #ba68c8;
+}
+
+
+/*---------------------------------------------- PUBLICIDADES------------------------------------------------*/
+
+li {
+    padding: 1%;
+}
+
+.publi {
+    width: 180px;
+    height: 100px;
+}
+
+
+/*-------------------------------------------------LISTA----------------------------------------------------*/
+
+.listaVendidos {
+    margin-left: 30%;
+    margin-right: 30%;
+    background: linear-gradient(80deg, #fc6262, #ffd86f);
+}
