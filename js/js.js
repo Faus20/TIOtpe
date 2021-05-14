@@ -25,3 +25,9 @@ function comprobar() {
         div.classList.add("oculto");
     }
 }
+
+document.getElementById("enviar").addEventListener("click", mensaje);
+
+function mensaje() {
+    alert("Muchas gracias, su formulario fue registrado")
+}
