@@ -1,6 +1,6 @@
-body{
-    background: linear-gradient(80deg, #ffd86f, #fc6262);
-    color: white;
+body {
+    background: green;
+    color: black;
 }
 
 
@@ -19,7 +19,6 @@ body{
     text-transform: uppercase;
 }
 
-
 .productos_index,
 .seccion_productos,
 .listaVendidos {
@@ -36,9 +35,8 @@ body{
     list-style: none;
 }
 
-
 footer,
-.seccion_productos{
+.seccion_productos {
     text-align-last: center;
 }
 
@@ -100,14 +98,14 @@ p {
 
 /*-----------------------------------------------SERVICIOS--------------------------------------------------*/
 
-.productos_index{
+.productos_index {
     width: 25%;
     height: 300px;
     margin: 5px;
 }
 
 .productos_index,
-.seccion_productos{
+.seccion_productos {
     background-color: #ba68c8;
 }
 
