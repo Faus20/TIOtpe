@@ -102,6 +102,7 @@ p {
     width: 25%;
     height: 300px;
     margin: 5px;
+    background-image: url(accesorios.jpg);
 }
 
 .productos_index,
