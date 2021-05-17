@@ -4,6 +4,7 @@
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 .publicidad,
 .separador2 {
     display: none;
@@ -36,10 +37,26 @@ td,
 body,
 th,
 tfoot {
+=======
+.publicidad, .separador2 {
+    display: none;
+}
+
+/*-----------------------------------------Estilos generales-------------------------------------------------*/
+
+header, nav, footer, .titulo_formulario, .textoCaptcha, .resultadoCaptcha, td, .listaVendidos, .btn_menu, 
+.separador, .separador2, .seccion_soporte, .seccion_productos, .tabla, .listaVendidos, 
+.formulario_dinamico, #validacion, .textarea {
+    text-align-last: center;
+}
+
+body, th, tfoot {
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     background: linear-gradient(80deg, #ffd86f, #fc6262);
     color: white;
 }
 
+<<<<<<< HEAD
 .listaVendidos,
 .tabla,
 .formulario,
@@ -80,12 +97,35 @@ div,
     margin-top: 2%;
 }
 
+=======
+.listaVendidos, .tabla, .formulario, .stock, .formulario_dinamico {
+    background: linear-gradient(80deg, #fc6262, #ffd86f);
+}
+
+.btn_menu, .separador, .separador2, .title_dinamico {
+    background-color: #2e2e2e;
+    padding: 2%;
+}
+
+ul.navigation.show, nav, .bienvenida, .contenedor {
+    display: flex;
+}
+
+header, .separador, .separador2, .bienvenida, .productos_index, .soporte_index, footer, .seccion_productos,
+.seccion_soporte, .tabla, .listaVendidos, div, .formulario, .formulario_dinamico {
+    margin-top: 2%;
+}
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
 img {
     width: 80%;
     height: 50%;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
 /*-----------------------------------------------------Nav-------------------------------------------------*/
 
 nav {
@@ -120,13 +160,16 @@ li:hover {
     background-color: #fc6262;
 }
 
+<<<<<<< HEAD
 .btn_menu h1,
 .separador,
 .separador2 {
+=======
+.btn_menu h1, .separador, .separador2 {
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     color: #ffd86f;
     font-size: 80%;
 }
-
 
 /*---------------------------------------------BIENVENIDA---------------------------------------------------*/
 
@@ -152,7 +195,9 @@ p {
     font-size: 120%;
 }
 
+/*-------------------------------------------Nuestros servicios---------------------------------------------*/
 
+<<<<<<< HEAD
 /*-------------------------------------------Nuestros servicios---------------------------------------------*/
 
 .seccion_soporte,
@@ -162,6 +207,13 @@ p {
 
 .productos_index,
 .soporte_index {
+=======
+.seccion_soporte, .seccion_productos {
+    justify-content: center;
+}
+
+.productos_index, .soporte_index {
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     border: solid 2px black;
     text-align: center;
     justify-content: center;
@@ -169,13 +221,16 @@ p {
     height: 300px;
 }
 
-.soporte_index,
-.seccion_soporte {
+.soporte_index, .seccion_soporte {
     background-color: #303f9f;
 }
 
+<<<<<<< HEAD
 .productos_index,
 .seccion_productos {
+=======
+.productos_index, .seccion_productos {
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     background-color: #ba68c8;
 }
 
@@ -184,6 +239,7 @@ p {
     height: 120px;
 }
 
+<<<<<<< HEAD
 
 /*-----------------------------------------------PRODUCTOS--------------------------------------------------*/
 
@@ -217,13 +273,46 @@ tr {
 .imagen_tabla {
     width: 45%;
     height: 90%;
+=======
+/*-----------------------------------------------PRODUCTOS--------------------------------------------------*/
+
+.tabla, .listaVendidos {
+    border: solid 2px black;
 }
 
+table, .tabla {
+    width: 100%;
+    height: 100%;
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
+}
+
+td {
+    border-bottom: solid 1px;
+}
+
+tbody {
+    background-color: white;
+    color: black;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.imagen_tabla {
+    width: 45%;
+    height: 90%;
+}
 
 /*----------------------------------------------- PAGINA DE SOPORTE------------------------------------------*/
 
+<<<<<<< HEAD
 .formulario,
 .textoCaptcha {
+=======
+.formulario, .textoCaptcha {
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     border: solid 1px #303f9f;
 }
 
@@ -231,9 +320,7 @@ tr {
     margin: 0%;
 }
 
-.titulo_formulario,
-.textoCaptcha,
-.resultadoCaptcha {
+.titulo_formulario, .textoCaptcha, .resultadoCaptcha {
     background: #303f9f;
     font-size: 150%;
 }
@@ -267,7 +354,10 @@ form {
     display: none;
     text-align-last: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
 
 /*-----------------------------------------------CAPTCHA----------------------------------------------------*/
 
@@ -283,7 +373,9 @@ form {
     background-color: red;
 }
 
+/*------------------------------------------------STOCK-----------------------------------------------------*/
 
+<<<<<<< HEAD
 /*------------------------------------------------STOCK-----------------------------------------------------*/
 
 .oferta {
@@ -313,10 +405,39 @@ table {
     text-align: center;
 }
 
+=======
+.oferta {
+    background-color: yellow;
+}
+
+table {
+    height: 15%;
+}
+
+.stock {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.formulario_dinamico {
+    border: solid 2px black;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.title_dinamico {
+    font-size: 100%;
+    margin: 0%;
+    text-align: center;
+}
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
 
 /*---------------------------------------------RESPONSIVE PC-------------------------------------------------*/
 
 @media only screen and (min-width: 660px) {
+<<<<<<< HEAD
     .contenedor {
         flex-direction: column;
     }
@@ -355,21 +476,74 @@ table {
     nav {
         background-color: #2e2e2e;
     }
+=======
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    /*----------------------------------------ESTILOS GENERALES----------------------------------------------*/
+    
+    .cuerpo_servicios, ul.navigation, .publicidad, .separador2, .formulario,
+    .fila_formulario, .cuerpo_stock {
+        display: flex;
+        justify-content: center;
+    }
+
+    .productos_index, .soporte_index, .tabla, .tabla_dinamica, .formulario_dinamico {
+        margin: 1%;
+        margin-top: 3%;
+    }
+
+    /*--------------------------------------------SERVICIOS--------------------------------------------------*/
+    
+    .productos_index, .soporte_index {
+        width: 25%;
+        height: 50%;
+
+    }
+
+    /*--------------------------------------------NAVEGADOR--------------------------------------------------*/
+    
+    .btn_menu {
+        display: none;
+    }
+
+    ul.navigation {
+        flex-direction: row;
+    }
+
+    nav {
+        background-color: #2e2e2e;
+    }
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .item {
         margin: 0px 40px;
         list-style: none;
         font-size: 27px;
         padding: 15px;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .botones {
         text-decoration: none;
         color: #ffd86f;
     }
+<<<<<<< HEAD
     /*-------------------------------------------------LOGO--------------------------------------------------*/
+=======
+
+    /*-------------------------------------------------LOGO--------------------------------------------------*/
+    
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     img {
         width: 450px;
         height: 200px;
     }
+<<<<<<< HEAD
     /*-----------------------------------------------PUBLICIDADES---------------------------------------------*/
     .publicidad {
         list-style: none;
@@ -377,10 +551,24 @@ table {
     li {
         padding: 1%;
     }
+=======
+
+    /*-----------------------------------------------PUBLICIDADES---------------------------------------------*/
+    
+    .publicidad {
+        list-style: none;
+    }
+
+    li {
+        padding: 1%;
+    }
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .publi {
         width: 180px;
         height: 100px;
     }
+<<<<<<< HEAD
     .separador,
     .separador2 {
         padding: 0%;
@@ -390,23 +578,52 @@ table {
     .cuerpo_tablas {
         display: flex;
     }
+=======
+
+    .separador, .separador2 {
+        padding: 0%;
+        font-size: 100%;
+    }
+
+    /*-----------------------------------------------PRODUCTOS------------------------------------------------*/
+    
+    .cuerpo_tablas {
+        display: flex;
+    }
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .listaVendidos {
         margin-left: 30%;
         margin-right: 30%;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .imagen_tabla {
         width: 45%;
         height: 350px;
     }
+<<<<<<< HEAD
     /*-----------------------------------------------SOPORTE-------------------------------------------------*/
     .formulario,
     .fila_formulario {
         list-style: none;
     }
+=======
+
+    /*-----------------------------------------------SOPORTE-------------------------------------------------*/
+    
+    .formulario, .fila_formulario {
+        list-style: none;
+    }
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .formulario {
         margin-left: 10%;
         margin-right: 10%;
     }
+<<<<<<< HEAD
     .formulario,
     .textoCaptcha {
         border: solid 5px #303f9f;
@@ -415,6 +632,19 @@ table {
     .tabla_dinamica {
         width: 65%;
     }
+=======
+
+    .formulario, .textoCaptcha {
+        border: solid 5px #303f9f;
+    }
+
+    /*------------------------------------------------STOCK--------------------------------------------------*/
+    
+    .tabla_dinamica {
+        width: 65%;
+    }
+
+>>>>>>> 0bfb9f40161cfce6be587f27a0e61381ff05b31b
     .formulario_dinamico {
         height: 50%;
         width: 25%;
