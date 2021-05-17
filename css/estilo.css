@@ -1,6 +1,8 @@
-body {
-    background: green;
-    color: black;
+body,
+th,
+tfoot {
+    background: linear-gradient(80deg, #ffd86f, #fc6262);
+    color: white;
 }
 
 
@@ -10,17 +12,28 @@ body {
 .separador,
 .servicios,
 .productos_index,
+.soporte_index,
 .bienvenida,
+.titulo_formulario,
+.textoCaptcha,
+.resultadoCaptcha,
+td,
 .listaVendidos {
     text-align: center;
 }
 
-.item {
+.item,
+.titulo_formulario,
+.textoCaptcha,
+.resultadoCaptcha {
     text-transform: uppercase;
 }
 
+.soporte_index,
+.seccion_soporte,
 .productos_index,
 .seccion_productos,
+.tabla,
 .listaVendidos {
     border: solid 2px black;
 }
@@ -28,6 +41,8 @@ body {
 .publicidad,
 .nav,
 .cuerpo_servicios,
+.formulario,
+.fila_formulario,
 .cuerpo_tablas,
 .bienvenida {
     display: flex;
@@ -35,8 +50,11 @@ body {
     list-style: none;
 }
 
+header,
 footer,
-.seccion_productos {
+.seccion_productos,
+.seccion_soporte,
+.tabla {
     text-align-last: center;
 }
 
@@ -51,7 +69,8 @@ img {
 .nav,
 .separador,
 .servicios,
-.productos_index {
+.productos_index,
+.soporte_index {
     justify-content: center;
     background-color: #2e2e2e;
 }
@@ -88,7 +107,7 @@ li:hover {
 }
 
 .titulo_bienvenida {
-    font-size: 330%;
+    font-size: 300%;
 }
 
 p {
@@ -98,15 +117,21 @@ p {
 
 /*-----------------------------------------------SERVICIOS--------------------------------------------------*/
 
-.productos_index {
+.productos_index,
+.soporte_index {
     width: 25%;
     height: 300px;
     margin: 5px;
-    background-image: url(accesorios.jpg);
+}
+
+.soporte_index,
+.seccion_soporte {
+    background-color: #303f9f;
 }
 
 .productos_index,
-.seccion_productos {
+.seccion_productos,
+.tabla {
     background-color: #ba68c8;
 }
 
@@ -123,10 +148,115 @@ li {
 }
 
 
+/*----------------------------------------------- PAGINA DE SOPORTE------------------------------------------*/
+
+.formulario,
+.textoCaptcha {
+    border: solid 5px #303f9f;
+}
+
+.formulario {
+    background: linear-gradient(80deg, #fc6262, #ffd86f);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+.titulo_formulario,
+.textoCaptcha,
+.resultadoCaptcha {
+    background: #303f9f;
+    font-size: 20px;
+}
+
+label {
+    font-family: cursive;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fila_formulario {
+    padding: 10px;
+}
+
+.registro {
+    background-color: #303f9f;
+    font-size: 100%;
+    font-weight: bold;
+    color: white;
+}
+
+.genero {
+    color: #303f9f;
+}
+
+form {
+    width: 100%;
+}
+
+
+/*-----------------------------------------------CAPTCHA----------------------------------------------------*/
+
+.resultadoCaptcha {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ResultadoPositivo {
+    background-color: green;
+}
+
+.ResultadoNegativo {
+    background-color: red;
+}
+
+
+/*------------------------------------------PAGINA DE PRODUCTOS------------------------------------------------*/
+
+table {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    border-bottom: solid 1px;
+    /*borde celdas*/
+}
+
+tbody {
+    background-color: white;
+    color: black;
+}
+
+table,
+td,
+tr {
+    /*borde tabla y celdas*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabla {
+    background: linear-gradient(80deg, #fc6262, #ffd86f);
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+}
+
+.imagen_tabla {
+    width: 45%;
+    height: 350px;
+}
+
+
 /*-------------------------------------------------LISTA----------------------------------------------------*/
 
 .listaVendidos {
     margin-left: 30%;
     margin-right: 30%;
     background: linear-gradient(80deg, #fc6262, #ffd86f);
+}
+
+.oculto {
+    text-align-last: center;
+    display: none;
 }
