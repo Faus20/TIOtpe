@@ -1,0 +1,280 @@
+<div class="seccion_productos">
+    <img class="tamaño_logos" alt="Logo computadora" src="imagenes/computadora.png" />
+    <h1>Productos</h1>
+</div>
+<div class="separador">
+    <h1>Tarjetas graficas</h1>
+</div>
+<div class="cuerpo_tablas">
+    <section class="tabla">
+        <img class="imagen_tabla" src="imagenes/tarjeta1.png" alt="Imagen Tarjeta">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Radeon™ RX 570</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Precio:</td>
+                    <td>$10.999</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Unidades de cómputo:</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Frecuencia base:</td>
+                    <td>1168 MHz</td>
+                </tr>
+                <tr>
+                    <td>Frecuencia de aumento:</td>
+                    <td>Hasta 1244 MHz</td>
+                </tr>
+                <tr>
+                    <td>Interfaz de memoria:</td>
+                    <td>256-bit</td>
+                </tr>
+                <tr>
+                    <td>Ancho de banda de memoria máx:</td>
+                    <td>224 GB/s</td>
+                </tr>
+                <tr>
+                    <td>Tipo de memoria:</td>
+                    <td>GDDR5</td>
+                </tr>
+        </table>
+    </section>
+    <section class="tabla">
+        <img class="imagen_tabla" src="imagenes/tarjeta2.png" alt="Imagen Tarjeta">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">GeForce® GTX 1050 D5 2G(rev1.0/rev1.1)</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Precio:</td>
+                    <td>$3699.99</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Graphics Processing: </td>
+                    <td>GeForce® GTX 1050</td>
+                </tr>
+                <tr>
+                    <td>Memory Clock:</td>
+                    <td>7‎008 MHz</td>
+                </tr>
+                <tr>
+                    <td>Memory Size:</td>
+                    <td>2‎ GB</td>
+                </tr>
+                <tr>
+                    <td>OpenGL:</td>
+                    <td>4‎.5</td>
+                </tr>
+                <tr>
+                    <td>DirectX:</td>
+                    <td>1‎2</td>
+                </tr>
+                <tr>
+                    <td>Digital max resolution: </td>
+                    <td>7‎680x4320</td>
+                </tr>
+        </table>
+    </section>
+</div>
+<div class="separador">
+    <h1>Procesadores</h1>
+</div>
+<div class="cuerpo_tablas">
+    <section class="tabla">
+
+        <img class="imagen_tabla" src="imagenes/procesador1.png" alt="Procesador">
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Procesador Intel® Core™ i7-9700K </th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Precio:</td>
+                    <td>Desde $7.619</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Gráficos del procesador:</td>
+                    <td>Gráficos UHD Intel® 630</td>
+                </tr>
+                <tr>
+                    <td>Resolución máxima (DP)‡:</td>
+                    <td>4096 x 2304@60Hz</td>
+                </tr>
+                <tr>
+                    <td>Cantidad de núcleos: </td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Frecuencia básica del procesador:</td>
+                    <td>3.60 GHz</td>
+                </tr>
+                <tr>
+                    <td>Caché:</td>
+                    <td>12 MB Intel® Smart Cache</td>
+                </tr>
+                <tr>
+                    <td>TDP:</td>
+                    <td>95 W</td>
+                </tr>
+        </table>
+    </section>
+    <section class="tabla">
+        <img class="imagen_tabla" src="imagenes/procesador2.png" alt="Procesador">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">AMD Ryzen™ 7 3800XT</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td>Precio:</td>
+                    <td>$3699.99</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Velocidad máxima de memoria: </td>
+                    <td>Up to 3200MHz</td>
+                </tr>
+                <tr>
+                    <td>Tipo de memoria:</td>
+                    <td>DDR4</td>
+                </tr>
+                <tr>
+                    <td># de núcleos de CPU:</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Reloj base:</td>
+                    <td> 3.9GHz</td>
+                </tr>
+                <tr>
+                    <td>TDP/TDP predeterminado:</td>
+                    <td>105W</td>
+                </tr>
+                <tr>
+                    <td>CMOS:</td>
+                    <td>TSMC 7nm FinFET</td>
+                </tr>
+        </table>
+    </section>
+</div>
+<div class="separador">
+    <h1>Stock</h1>
+</div>
+
+<div class="cuerpo_stock">
+    <section class="tabla_dinamica">
+        <table>
+            <thead>
+                <tr class="stock">
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Borrar</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </section>
+
+    <div class="ocultar" id="editar_producto">
+        <aside class="formulario_dinamico">
+            <form>
+                <div class="title_dinamico">
+                    Editar producto
+                </div>
+                <div>
+                    <label for="producto_nuevo"> Producto: </label>
+                    <input type="text" id="producto_nuevo" name="producto_nuevo" placeholder="Ingrese nuevo nombre">
+                </div>
+                <div>
+                    <label for="number">Precio:</label>
+                    <input type="number" id="precio_nuevo" name="number" placeholder="Ingrese nuevo precio">
+                </div>
+                <div>
+                    <button class="botonform" type="button" id="btnEditar">Guardar</button>
+                    <button class="botonform" type="button" id="btnCancelar">Cancelar</button>
+                </div>
+                <div class="resultado" id="resultado_editar">
+                </div>
+            </form>
+        </aside>
+    </div>
+
+    <div class="cuerpo_form" id="editar">
+        <aside class="formulario_dinamico">
+            <form >
+                <div class="title_dinamico">
+                    Cargue producto
+                </div>
+                <div>
+                    <label for="producto"> Producto: </label>
+                    <input type="text" id="producto" name="producto" placeholder="Ingrese producto">
+                </div>
+                <div>
+                    <label for="number">Precio:</label>
+                    <input type="number" id="precio" name="number" placeholder="Ingrese precio">
+                </div>
+
+                <div>
+                    <button class="botonform" type="button" id="btnAdd">Agregar</button>
+                    <button class="botonform" type="button" id="btn3">Agregar x3</button>
+                </div>
+                <div class="result" id="resultado_cargar">
+
+                </div>
+            </form>
+        </aside>
+        <aside class="formulario_dinamico">
+            <form>
+                <div class="title_dinamico">
+                    Buscar producto
+                </div>
+                <div>
+                    <input type="text" id="busqueda" name="producto" placeholder="Ingrese busqueda">
+                </div>
+                <div>
+                    <button class="botonform" type="button" id="btnBuscar">Buscar</button>
+                </div>
+                <div class="result" id="resultado_buscar">
+
+                </div>
+            </form>
+        </aside>
+    </div>
+</div>
+<div class="separador">
+    <h1>Las PC Gaming mas vendidas</h1>
+</div>
+<section class="listaVendidos">
+    <ol>
+        <li>NITROPC PC Gamer VX </li>
+        <li>LUMAR Ordenador Gaming Sobremesa </li>
+        <li>MSI Aegis 3 8RG-047EU Ordenador de sobremesa Gaming </li>
+        <li>Vibox VBX-PC-1485 ordenador de sobremesa </li>
+        <li>VIBOX Flame Paquet 1 Gaming PC</li>
+        <li>Medion S91 PC Gaming </li>
+    </ol>
+</section>
