@@ -4,15 +4,11 @@
     flex-direction: column;
 }
 
-.publicidad, .separador2 {
-    display: none;
-}
-
 /*-----------------------------------------Estilos generales-------------------------------------------------*/
 
 header, nav, footer, .titulo_formulario, .textoCaptcha, .resultadoCaptcha, td, .listaVendidos, .btn_menu, 
-.separador, .separador2, .seccion_soporte, .seccion_productos, .tabla, .listaVendidos, 
-.formulario_dinamico, #validacion, .textarea {
+.separador, .seccion_soporte, .seccion_productos, .tabla, .listaVendidos, 
+.formulario_dinamico, #validacion, .textarea, .busqueda_dinamico {
     text-align-last: center;
 }
 
@@ -21,11 +17,11 @@ body, th, tfoot {
     color: white;
 }
 
-.listaVendidos, .tabla, .formulario, .stock, .formulario_dinamico {
+.listaVendidos, .tabla, .formulario, .stock, .formulario_dinamico, .busqueda_dinamico{
     background: linear-gradient(80deg, #fc6262, #ffd86f);
 }
 
-.btn_menu, .separador, .separador2, .title_dinamico {
+.btn_menu, .separador, .title_dinamico {
     background-color: #2e2e2e;
     padding: 2%;
 }
@@ -34,17 +30,15 @@ ul.navigation.show, nav, .bienvenida, .contenedor {
     display: flex;
 }
 
-header, .separador, .separador2, .bienvenida, .productos_index, .soporte_index, footer, .seccion_productos,
+header, .separador, .bienvenida, .productos_index, .soporte_index, footer, .seccion_productos,
 .seccion_soporte, .tabla, .listaVendidos, div, .formulario, .formulario_dinamico {
     margin-top: 2%;
 }
-
 
 img {
     width: 80%;
     height: 50%;
 }
-
 
 /*-----------------------------------------------------Nav-------------------------------------------------*/
 
@@ -80,8 +74,7 @@ li:hover {
     background-color: #fc6262;
 }
 
-.btn_menu h1, .separador, .separador2 {
-
+.btn_menu h1, .separador{
     color: #ffd86f;
     font-size: 80%;
 }
@@ -112,13 +105,11 @@ p {
 
 /*-------------------------------------------Nuestros servicios---------------------------------------------*/
 
-
 .seccion_soporte, .seccion_productos {
     justify-content: center;
 }
 
 .productos_index, .soporte_index {
-
     border: solid 2px black;
     text-align: center;
     justify-content: center;
@@ -131,13 +122,12 @@ p {
 }
 
 .productos_index, .seccion_productos {
-
     background-color: #ba68c8;
 }
 
-.publi {
+.tamaño_logos {
     width: 40%;
-    height: 120px;
+    height: 60%;
 }
 
 /*-----------------------------------------------PRODUCTOS--------------------------------------------------*/
@@ -149,7 +139,6 @@ p {
 table, .tabla {
     width: 100%;
     height: 100%;
-
 }
 
 td {
@@ -226,14 +215,17 @@ form {
     background-color: green;
 }
 
-.ResultadoNegativo {
+.ResultadoNegativo, .resaltado {
     background-color: red;
 }
 
 /*------------------------------------------------STOCK-----------------------------------------------------*/
+.ocultar{
+    display: none;
+}
 
-.oferta {
-    background-color: yellow;
+.resaltar_fila{
+    background-color:#fc6262;
 }
 
 table {
@@ -244,6 +236,11 @@ table {
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+button {
+    background: linear-gradient(80deg, #ffd86f, #fc6262);
+    border-radius: 6px;
 }
 
 .formulario_dinamico {
@@ -269,7 +266,7 @@ table {
 
     /*----------------------------------------ESTILOS GENERALES----------------------------------------------*/
     
-    .cuerpo_servicios, ul.navigation, .publicidad, .separador2, .formulario,
+    .cuerpo_servicios, ul.navigation, .formulario,
     .fila_formulario, .cuerpo_stock {
         display: flex;
         justify-content: center;
@@ -285,9 +282,14 @@ table {
     .productos_index, .soporte_index {
         width: 25%;
         height: 50%;
-
+        
     }
 
+    .separador {
+        padding: 0%;
+        font-size: 100%;
+    }
+    
     /*--------------------------------------------NAVEGADOR--------------------------------------------------*/
     
     .btn_menu {
@@ -298,7 +300,7 @@ table {
         flex-direction: row;
     }
 
-    nav {
+    nav, footer {
         background-color: #2e2e2e;
     }
 
@@ -308,9 +310,14 @@ table {
         font-size: 27px;
         padding: 15px;
     }
+
     .botones {
         text-decoration: none;
         color: #ffd86f;
+    }
+    
+    .botones:hover{
+        cursor: pointer;
     }
 
     /*-------------------------------------------------LOGO--------------------------------------------------*/
@@ -320,24 +327,9 @@ table {
         height: 200px;
     }
 
-    /*-----------------------------------------------PUBLICIDADES---------------------------------------------*/
-    
-    .publicidad {
-        list-style: none;
-    }
-
-    li {
-        padding: 1%;
-    }
-
-    .publi {
-        width: 180px;
+    .tamaño_logos {
+        width: 100px;
         height: 100px;
-    }
-
-    .separador, .separador2 {
-        padding: 0%;
-        font-size: 100%;
     }
 
     /*-----------------------------------------------PRODUCTOS------------------------------------------------*/
@@ -346,13 +338,18 @@ table {
         display: flex;
     }
 
-    .listaVendidos {
+    .listaVendidos, .busqueda_dinamico {
         margin-left: 30%;
         margin-right: 30%;
     }
+
     .imagen_tabla {
         width: 45%;
         height: 350px;
+    }
+
+    li{
+        padding: 1%;
     }
 
     /*-----------------------------------------------SOPORTE-------------------------------------------------*/
@@ -371,13 +368,23 @@ table {
     }
 
     /*------------------------------------------------STOCK--------------------------------------------------*/
-    
+     table {
+         width: 100%;
+     }
+     
     .tabla_dinamica {
-        width: 65%;
+        width: 70%;
     }
 
     .formulario_dinamico {
-        height: 50%;
-        width: 25%;
+        width: 100%;
+    }
+
+    .cuerpo_form{
+        width: 30%;
+    }
+              
+    .mostrar{
+        display: flex;
     }
 }

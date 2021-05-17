@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", iniciarPagina);
 "use strict";
 
 const url_inicio = 'paginas/home.html';
-const url_productos = 'paginas/product.html';
+const url_productos = "paginas/product.html";
 const url_soporte = 'paginas/support.html';
 
 function iniciarPagina() {
