@@ -1,3 +1,38 @@
+/*----------------------------------------Responsive Mobile First---------------------------------------------*/
+
+.contenedor {
+    flex-direction: column;
+}
+
+.publicidad,
+.separador2 {
+    display: none;
+}
+
+
+/*-----------------------------------------Estilos generales-------------------------------------------------*/
+
+header,
+nav,
+footer,
+.titulo_formulario,
+.textoCaptcha,
+.resultadoCaptcha,
+td,
+.listaVendidos,
+.btn_menu,
+.separador,
+.separador2,
+.seccion_soporte,
+.seccion_productos,
+.tabla,
+.listaVendidos,
+.formulario_dinamico,
+#validacion,
+.textarea {
+    text-align-last: center;
+}
+
 body,
 th,
 tfoot {
@@ -5,90 +40,91 @@ tfoot {
     color: white;
 }
 
-
-/*---------------------------------------ESTILOS GENERALES---------------------------------------------------*/
-
-.nav,
-.separador,
-.servicios,
-.productos_index,
-.soporte_index,
-.bienvenida,
-.titulo_formulario,
-.textoCaptcha,
-.resultadoCaptcha,
-td,
-.listaVendidos {
-    text-align: center;
-}
-
-.item,
-.titulo_formulario,
-.textoCaptcha,
-.resultadoCaptcha {
-    text-transform: uppercase;
-}
-
-.soporte_index,
-.seccion_soporte,
-.productos_index,
-.seccion_productos,
+.listaVendidos,
 .tabla,
-.listaVendidos {
-    border: solid 2px black;
+.formulario,
+.stock,
+.formulario_dinamico {
+    background: linear-gradient(80deg, #fc6262, #ffd86f);
 }
 
-.publicidad,
-.nav,
-.cuerpo_servicios,
-.formulario,
-.fila_formulario,
-.cuerpo_tablas,
-.bienvenida {
+.btn_menu,
+.separador,
+.separador2,
+.title_dinamico {
+    background-color: #2e2e2e;
+    padding: 2%;
+}
+
+ul.navigation.show,
+nav,
+.bienvenida,
+.contenedor {
     display: flex;
-    justify-content: center;
-    list-style: none;
 }
 
 header,
+.separador,
+.separador2,
+.bienvenida,
+.productos_index,
+.soporte_index,
 footer,
 .seccion_productos,
 .seccion_soporte,
-.tabla {
-    text-align-last: center;
+.tabla,
+.listaVendidos,
+div,
+.formulario,
+.formulario_dinamico {
+    margin-top: 2%;
 }
-
-
-/*-----------------------------------------TITULO Y NAV--------------------------------------------------*/
 
 img {
-    width: 450px;
-    height: 200px;
+    width: 80%;
+    height: 50%;
 }
 
-.nav,
-.separador,
-.servicios,
-.productos_index,
-.soporte_index {
-    justify-content: center;
-    background-color: #2e2e2e;
+
+/*-----------------------------------------------------Nav-------------------------------------------------*/
+
+nav {
+    border-bottom: 4px solid #2e2e2e;
+    width: 100%;
+    background-color: gray;
 }
 
 .item {
-    margin: 0px 40px;
     list-style: none;
-    font-size: 27px;
-    padding: 15px;
-}
-
-li:hover {
-    background: #fc6262;
+    font-size: 60%;
+    color: white;
+    text-transform: uppercase;
+    padding: 2%;
 }
 
 .botones {
     text-decoration: none;
+    color: white;
+}
+
+ul.navigation {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+li:hover {
+    background-color: #fc6262;
+}
+
+.btn_menu h1,
+.separador,
+.separador2 {
     color: #ffd86f;
+    font-size: 80%;
 }
 
 
@@ -104,6 +140,8 @@ li:hover {
     opacity: 90%;
     align-content: center;
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
 }
 
 .titulo_bienvenida {
@@ -115,13 +153,20 @@ p {
 }
 
 
-/*-----------------------------------------------SERVICIOS--------------------------------------------------*/
+/*-------------------------------------------Nuestros servicios---------------------------------------------*/
+
+.seccion_soporte,
+.seccion_productos {
+    justify-content: center;
+}
 
 .productos_index,
 .soporte_index {
-    width: 25%;
+    border: solid 2px black;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
     height: 300px;
-    margin: 5px;
 }
 
 .soporte_index,
@@ -130,21 +175,48 @@ p {
 }
 
 .productos_index,
-.seccion_productos,
-.tabla {
+.seccion_productos {
     background-color: #ba68c8;
 }
 
-
-/*---------------------------------------------- PUBLICIDADES------------------------------------------------*/
-
-li {
-    padding: 1%;
+.publi {
+    width: 40%;
+    height: 120px;
 }
 
-.publi {
-    width: 180px;
-    height: 100px;
+
+/*-----------------------------------------------PRODUCTOS--------------------------------------------------*/
+
+.tabla,
+.listaVendidos {
+    border: solid 2px black;
+}
+
+table,
+.tabla {
+    width: 100%;
+    height: 100%;
+}
+
+td {
+    border-bottom: solid 1px;
+}
+
+tbody {
+    background-color: white;
+    color: black;
+}
+
+table,
+td,
+tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.imagen_tabla {
+    width: 45%;
+    height: 90%;
 }
 
 
@@ -152,31 +224,28 @@ li {
 
 .formulario,
 .textoCaptcha {
-    border: solid 5px #303f9f;
+    border: solid 1px #303f9f;
 }
 
-.formulario {
-    background: linear-gradient(80deg, #fc6262, #ffd86f);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
+.titulo_formulario {
+    margin: 0%;
 }
 
 .titulo_formulario,
 .textoCaptcha,
 .resultadoCaptcha {
     background: #303f9f;
-    font-size: 20px;
+    font-size: 150%;
 }
 
 label {
     font-family: cursive;
-    font-size: 15px;
+    font-size: 100%;
     font-weight: bold;
 }
 
 .fila_formulario {
-    padding: 10px;
+    padding: 1%;
 }
 
 .registro {
@@ -192,6 +261,11 @@ label {
 
 form {
     width: 100%;
+}
+
+#enviar {
+    display: none;
+    text-align-last: center;
 }
 
 
@@ -210,53 +284,139 @@ form {
 }
 
 
-/*------------------------------------------PAGINA DE PRODUCTOS------------------------------------------------*/
+/*------------------------------------------------STOCK-----------------------------------------------------*/
+
+.oferta {
+    background-color: yellow;
+}
 
 table {
-    width: 100%;
-    height: 100%;
+    height: 15%;
 }
 
-td {
-    border-bottom: solid 1px;
-    /*borde celdas*/
+.stock {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-tbody {
-    background-color: white;
-    color: black;
+.formulario_dinamico {
+    border: solid 2px black;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-table,
-td,
-tr {
-    /*borde tabla y celdas*/
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-.tabla {
-    background: linear-gradient(80deg, #fc6262, #ffd86f);
-    height: 100%;
-    width: 100%;
-    margin: 1%;
-}
-
-.imagen_tabla {
-    width: 45%;
-    height: 350px;
+.title_dinamico {
+    font-size: 100%;
+    margin: 0%;
+    text-align: center;
 }
 
 
-/*-------------------------------------------------LISTA----------------------------------------------------*/
+/*---------------------------------------------RESPONSIVE PC-------------------------------------------------*/
 
-.listaVendidos {
-    margin-left: 30%;
-    margin-right: 30%;
-    background: linear-gradient(80deg, #fc6262, #ffd86f);
-}
-
-.oculto {
-    text-align-last: center;
-    display: none;
+@media only screen and (min-width: 660px) {
+    .contenedor {
+        flex-direction: column;
+    }
+    /*----------------------------------------ESTILOS GENERALES----------------------------------------------*/
+    .cuerpo_servicios,
+    ul.navigation,
+    .publicidad,
+    .separador2,
+    .formulario,
+    .fila_formulario,
+    .cuerpo_stock {
+        display: flex;
+        justify-content: center;
+    }
+    .productos_index,
+    .soporte_index,
+    .tabla,
+    .tabla_dinamica,
+    .formulario_dinamico {
+        margin: 1%;
+        margin-top: 3%;
+    }
+    /*--------------------------------------------SERVICIOS--------------------------------------------------*/
+    .productos_index,
+    .soporte_index {
+        width: 25%;
+        height: 50%;
+    }
+    /*--------------------------------------------NAVEGADOR--------------------------------------------------*/
+    .btn_menu {
+        display: none;
+    }
+    ul.navigation {
+        flex-direction: row;
+    }
+    nav {
+        background-color: #2e2e2e;
+    }
+    .item {
+        margin: 0px 40px;
+        list-style: none;
+        font-size: 27px;
+        padding: 15px;
+    }
+    .botones {
+        text-decoration: none;
+        color: #ffd86f;
+    }
+    /*-------------------------------------------------LOGO--------------------------------------------------*/
+    img {
+        width: 450px;
+        height: 200px;
+    }
+    /*-----------------------------------------------PUBLICIDADES---------------------------------------------*/
+    .publicidad {
+        list-style: none;
+    }
+    li {
+        padding: 1%;
+    }
+    .publi {
+        width: 180px;
+        height: 100px;
+    }
+    .separador,
+    .separador2 {
+        padding: 0%;
+        font-size: 100%;
+    }
+    /*-----------------------------------------------PRODUCTOS------------------------------------------------*/
+    .cuerpo_tablas {
+        display: flex;
+    }
+    .listaVendidos {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .imagen_tabla {
+        width: 45%;
+        height: 350px;
+    }
+    /*-----------------------------------------------SOPORTE-------------------------------------------------*/
+    .formulario,
+    .fila_formulario {
+        list-style: none;
+    }
+    .formulario {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .formulario,
+    .textoCaptcha {
+        border: solid 5px #303f9f;
+    }
+    /*------------------------------------------------STOCK--------------------------------------------------*/
+    .tabla_dinamica {
+        width: 65%;
+    }
+    .formulario_dinamico {
+        height: 50%;
+        width: 25%;
+    }
 }
